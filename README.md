@@ -18,10 +18,10 @@ El objetivo de este proyecto es construir un componente de ranking practicando e
 ## Instalación y uso
 Para utilizar el proyecto, se debe clonar el repositorio en la máquina local y abrir el archivo index.html en un navegador web.
 
-bash
-Copy code
-git clone https://github.com/mfernandez0992/interactive-rating-component.git
-cd results-summary-component
+- bash
+- Copy code
+- git clone https://github.com/mfernandez0992/interactive-rating-component.git
+- cd results-summary-component
 
 ## Estructura de archivos
 El proyecto cuenta con los siguientes archivos:

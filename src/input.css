@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circleRating{
+    @apply rounded-full flex items-center justify-center w-[50px] h-[50px]
+}
+
+@layer base {
+    html {
+        font-family: 'Overpass', sans-serif;
+    }
+  }

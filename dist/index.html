@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+  <script src="app.js" defer></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+
+<body class="bg-very-dark-blue flex flex-col justify-center items-center min-h-screen">
+  <main class="w-[375px] h-[375px] bg-dark-blue rounded-3xl m-auto">
+    <section id="ratingSection" class="p-6"> <!-- Rating state start -->
+      <div class="circleRating bg-slate-700 mb-6"><img class="" src="images/icon-star.svg" alt=""></div>
+      <div>
+        <h1 class="text-white text-2xl font-bold">How did we do?</h1>
+        
+        <p class="text-light-grey text-15px mt-2">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+    
+      <div id="circles" class="flex justify-between my-6">
+        <span id="circle1" data-id="1" class="circleRating bg-slate-700 text-medium-grey font-bold hover:bg-light-grey hover:text-white">1</span>
+        <span id="circle2" data-id="2" class="circleRating bg-slate-700 text-medium-grey font-bold hover:bg-light-grey hover:text-white">2</span>
+        <span id="circle3" data-id="3" class="circleRating bg-slate-700 text-medium-grey font-bold hover:bg-light-grey hover:text-white">3</span>
+        <span id="circle4" data-id="4" class="circleRating bg-slate-700 text-medium-grey font-bold hover:bg-light-grey hover:text-white">4</span>
+        <span id="circle5" data-id="5" class="circleRating bg-slate-700 text-medium-grey font-bold hover:bg-light-grey hover:text-white">5</span>
+      </div>
+    
+      <button id="submit" class="w-full bg-primary uppercase rounded-3xl text-white py-2 hover:bg-white hover:text-primary font-bold">Submit</button>
+    </section> <!-- Rating state end -->
+    
+    <section id="thankyou" class="hidden w-[375px] h-[375px] p-8 flex-col justify-center bg-dark-blue rounded-3xl mt-4 items-center text-center"> <!-- Thank you state start -->
+      <img src="images/illustration-thank-you.svg" class="w-6/12" alt="">
+      <span class="text-primary bg-slate-700 rounded-2xl w-8/12 mt-8 mb-10 py-1 px-2"></span>
+    
+      <h2 class="text-3xl text-white">Thank you!</h2>
+      <p class="text-light-grey mt-4 text-15px/[20px]">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </section> <!-- Thank you state end -->
+  </main>
+  
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/matias-fernandez1992/">Matías Fernández</a>.
+  </div>
+
+</body>
+</html>
